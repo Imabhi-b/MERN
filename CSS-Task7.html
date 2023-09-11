@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    
+            background-color:rgb(169, 52, 76)
+        }
+        div{
+            font-size: 20px;
+            margin:5% 20%;
+           color: white;
+            background-color: rgb(96, 30, 43);
+            padding: 25px 35px;
+            
+        }
+        form{
+            
+            width: 100%;
+            
+        }
+        .qw{
+            display: inline-block;
+            width: 300px;
+            padding: 14px;
+        }
+        
+       
+        input{
+            height:20px;
+        }
+        input[type="radio"]{
+            transform: scale(1.2);
+        }
+        select{
+            height:25px;
+            background-color: gray;
+        }
+        textarea{
+           
+            width:220px;
+            height:50px;
+            
+        }
+        #txtar{
+            margin-left: -4%;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0%;
+        }
+        button{
+            font-size: 20px;
+            font-weight: bold;
+           margin-left: 220px;
+            width: 45%;
+            height: 40px;
+            background-color: aliceblue;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="name" class="qw">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br />
+            <label for="em" class="qw">Email:</label>
+            <input type="text" id="em" name="em" required>
+            <br />
+            <label for="pass" class="qw">Password:</label>
+            <input type="password" id="pass" name="pass" required>
+            <br />
+            <label for="pn" class="qw">Phone Number:</label>
+            <input type="tel" id="pn" name="pn" pattern="(1-9)(0-9){9}" required>
+            <br />
+            <lable class="qw">Gender:</lable>
+            <label for="male" >Male:</label>
+            <input type="radio" id="male" name="gen" value="Male">
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gen" value="Female">
+            <label for="other">Others:</label>
+            <input type="radio" id="other" name="gen" value="other">
+            <br />
+            <label for="lan" class="qw">Language:</label>
+            <select id="lan">
+            <option value="l1"> Select Language</option>
+            <option value="l2"> English</option>
+            <option value="l3"> Hindi</option>
+        </select>
+        <br />
+        <label for="zip" class="qw">Zip Code:</label>
+        <input type="number" pattern="(1-9){0-9}{5}" id="zip">
+        <br />
+        <div id="txtar">
+        <label for="ta" class="qw ">About:</label>
+        <textarea id="ta" placeholder="Write about yourself...." ></textarea>
+    </div>
+        <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

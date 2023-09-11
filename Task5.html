@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1{
+           
+           margin-top: 2%;
+           margin-bottom: 1.5%;
+           color:blue;
+       }
+       #add{
+        height: 160px;
+        width: 420px;
+       }
+       th{
+        width:160px;
+       }
+       td{
+        width: 420px;
+       }
+       .wide{
+        width: 420px;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1 align="center"> Registration Form</h1>
+    <div align="center">
+        <form id="frm" action="https://ethnus.com/">
+        <table border="1">
+            <tr>
+                <th> <label  for="fn">First Name</label></th>
+                <td > <input  type="text" id="fn" name="fn" class="wide" required> </td>
+            </tr>
+            <tr>
+                <th> <label for="ln">Last Name</label></th>
+                <td> <input type="text" id="ln" name="ln" class="wide" required> </td>
+            </tr>
+            <tr>
+                <th> <label for="em">Email</label></th>
+                <td> <input type="text" id="em" name="em" class="wide" required> </td>
+            </tr>
+            <tr>
+                <th>  <label for="pass">Password</label></th>
+                <td><input type="password" id="pass" name="pass" class="wide" required></td>
+            </tr>
+            <tr>
+                <th>  <label for="rpass">Re-enter Password</label></th>
+                <td><input type="password" id="rpass" name="rpass" class="wide" required></td>
+            </tr>
+            <tr>
+                <th> <label for="gen">Gender</label></th>
+                <td>  <input type="radio" id="gen" name="gen" value="male"> Male
+                <br>  <input type="radio" id="gen" name="gen" value="female"> Female </td>
+            </tr>
+            <tr>
+                <th> <label for="age">Age</label></th>
+                <td> <input type="number" id="age" name="age" min="1" class="wide"> </td>
+            </tr>
+            <tr>
+                <th>  <label for="tel">Mobile Number</label></th>
+                <td><input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="1234567890" required class="wide"></td>
+            </tr>
+            <tr  >
+                <th> Address</th>
+                <td > <textarea name="add" form="frm" id="add" required ></textarea> </td>
+            </tr>
+            <tr>
+                <th> <label for="state">State</label></th>
+                <td> <input type="text" id="state" name="state" class="wide"> </td>
+            </tr>
+            <tr>
+                <th> <label for="country">Country</label></th>
+                <td> <select id="country" name="country">
+                    <option>Select Your Country</option>
+                <option>India</option> 
+            <option>USA</option></td>
+            </tr>
+            <tr>
+                <th> <label for="lan">Languages Known</label></th>
+                <td> <input type="checkbox" id="lan" >English
+                    <input type="checkbox" id="lan" >Kannada
+                    <input type="checkbox" id="lan" >Hindi
+                    <input type="checkbox" id="lan" >Telugu
+                </td>
+            </tr>
+            <tr >
+                <th colspan="2" align="left"> <label for="dec"></label>
+                    <input type="checkbox" id="lan" >Hereby I declare all the given details are true</th>
+            </tr>
+            <tr>
+                <td colspan="2" align="right"> Log in to <a href="https://ethnus.com/">Ethnus</a> website</td>
+            </tr>
+        </table>
+        <br>
+        <button>Register</button>
+    </form>
+    </div>
+</body>
+</html>

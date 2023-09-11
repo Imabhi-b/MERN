@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        h1{
+           
+            margin-top: 2%;
+            margin-bottom: 3%;
+            color:blue;
+        }
+        div{
+            
+            margin-left: 33%;
+            
+        }
+        input{
+            height: 25px;
+            margin-top: 1%;
+        }
+        label{
+            font-size: 20px;
+            width:150px;
+            display: inline-block;
+            margin-right: 20%;
+        }
+        select{
+            height: 25px;
+            margin-top: 1%;
+        }
+        button{
+            font-size: 20px;
+            box-shadow: 0px 0px 10px orange; 
+            
+        }
+    </style>
+</head>
+<body bgcolor="antiquewhite" >
+    <h1 align="center"> Sample HTML Form</h1>
+    <div>
+    <form>
+        <label for="fn">Full Name:</label>
+        <input type="text" id="fn" name="fn" > 
+        <br />
+        <label for="un">Username:</label>
+        <input type="text" id="un" name="un">
+        <br/>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass">
+        <br />
+        <label for="rp">Re Password:</label>
+        <input type="password" id="rp" name="rp">
+        <br />
+        <label for="add">Address:</label>
+        <input type="text" id="add" name="add">
+        <br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" >
+        <br />
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <br />
+        <br>
+        <button>Save</button>
+    </form>
+</div>
+</body>
+</html>
